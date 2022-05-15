@@ -89,7 +89,6 @@ body {
   text-transform: uppercase;
 }
 .feature-liste .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
 }
@@ -112,7 +111,6 @@ body {
   color: #212121;
 }
 .team-liste .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -124,21 +122,19 @@ body {
 }
 .site-add .link {
   color: #ffffff;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
 }
 .site-add .mail,
 .site-add .tel {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
 }
 /* button */
 
 .button-hero {
-  color: #ffffff;
+  font-family: Roboto, sans-serif;
   background: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -147,6 +143,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /* Стилі - портфоліо */
@@ -159,8 +157,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: #212121;
   border-radius: 4px;
+  color: #212121;
+  cursor: pointer;
 
   /* width: 128px;
   height: 38px;
@@ -184,7 +183,6 @@ body {
   letter-spacing: 0.06em;
 }
 .projects .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
