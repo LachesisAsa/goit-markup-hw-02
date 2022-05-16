@@ -1,12 +1,12 @@
-/* колір первинного текст #757575;
-/* колір вторинного тексту #212121;*/
-/* білий колір #FFFFFF; */
-/* колір акценту #2196F3; */
-/* первинний фоновий колір #E5E5E5; */
-/* колір логотипу #000000; */
-/* футер текст контактів rgba(255, 255, 255, 0.6); */
-/* футер background #2F303A; */
-/* section-time background  #f5f4fa; */
+/* колір первинного текст  #757575; */
+/* колір вторинного тексту  #212121; */
+/* колір акценту  #2196F3; */
+/* первинний фоновий колір  #FFFFFF; */
+/* колір логотипу  #000000; */
+/* футер текст контактів  rgba(255, 255, 255, 0.6); */
+/* футер background  #2F303A; */
+/* section-time background   #f5f4fa; */
+/* білий колір тексту  #FFFFFF*/
 
 /* Стилі - головна сторінка */
 
@@ -14,29 +14,49 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff;
+  --footer-hero-bg-color: #2f303a;
+  --footer-contacts-text: rgba(255, 255, 255, 0.6);
+  --white-color-text: #ffffff;
 }
 body {
   background: var(--primary-bg-color);
   color: var(--title-text-color);
-  font-family: roboto, sans-serif;
-  letter-spacing: 0.03;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.link {
+  text-decoration: none;
 }
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* header */
 
-.top-line-bg {
-  background: #ffffff;
-}
 .logo {
   font-family: Raleway, sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.white-color-logo {
+  color: #ffffff;
 }
 .accent {
   color: var(--accent-color);
@@ -70,10 +90,10 @@ body {
 /* Main */
 
 .hero {
-  background: #2f303a;
+  background: var(--footer-hero-bg-color);
 }
 .hero .title {
-  color: #ffffff;
+  color: var(--white-color-text);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -118,20 +138,24 @@ body {
 /* Footer */
 
 .footer-bg {
-  background: #2f303a;
+  background: var(--footer-hero-bg-color);
 }
 .site-add .link {
-  color: #ffffff;
+  color: var(--white-color-text);
   font-size: 14px;
   line-height: 1.14;
 }
 .site-add .mail,
 .site-add .tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-text);
   font-size: 14px;
   line-height: 1.14;
 }
-/* button */
+.site-add .link:hover {
+  color: var(--accent-color);
+}
+
+/* button-hero */
 
 .button-hero {
   font-family: Roboto, sans-serif;
@@ -143,38 +167,34 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color-text);
   cursor: pointer;
 }
+/* button-portfolio */
 
-/* Стилі - портфоліо */
-
-.portfolio-main {
-  background: #eeeeee;
-}
 .button {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   border-radius: 4px;
-  color: #212121;
+  color: var(--primary-text-color);
   cursor: pointer;
+  letter-spacing: 0.03em;
 
   /* width: 128px;
   height: 38px;
   left: 576px;
   top: 174px; */
 }
-.button:hover {
-  color: #ffffff;
-  background: var(--accent-color);
-  font-family: inherit;
-}
+.button:hover,
 .button:focus {
-  color: #ffffff;
+  color: var(--white-color-text);
   background: var(--accent-color);
 }
+
+/* Стилі - портфоліо */
+
 .projects .title {
   color: var(--primary-text-color);
   font-weight: 700;
